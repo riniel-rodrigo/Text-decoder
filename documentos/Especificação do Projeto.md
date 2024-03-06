@@ -1,4 +1,4 @@
-## Requisitos
+## Requisitos do projeto
 
 1. **Funcionamento com Letras Minúsculas**: A aplicação deve funcionar apenas com letras minúsculas. Qualquer letra maiúscula será ignorada.
 

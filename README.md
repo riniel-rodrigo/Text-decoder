@@ -18,7 +18,7 @@ Este projeto foi desenvolvido como parte do desafio da **Oracle Next Education (
 ## Interface 📲
 
 **Mobile**
-![mobile](https://github.com/riniel-rodrigo/Text-decoder/assets/80684745/c5244ab1-5bf2-4799-bd4d-2c745d1bdf54)
+![mobile](https://github.com/riniel-rodrigo/Text-decoder/assets/80684745/dab4b605-fff4-4d2e-abef-04355b6fe573)
 
 **Desktop**
-![mobile (1)](https://github.com/riniel-rodrigo/Text-decoder/assets/80684745/318e22be-718b-4090-a3bd-db99b5a265ff)
+![desk](https://github.com/riniel-rodrigo/Text-decoder/assets/80684745/0a207427-e08d-426e-91e9-7f9bc26a0fbe)

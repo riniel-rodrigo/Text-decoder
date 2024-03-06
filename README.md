@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte do desafio da **Oracle Next Education (
 
 
 ## Como Utilizar 📝
-1. Acesse o site do **Text encoder** [aqui]([URL](https://riniel-rodrigo.github.io/Text-decoder/)).
+1. Acesse o site do **Text encoder** [aqui.](https://riniel-rodrigo.github.io/Text-decoder/)
 3. Insira o texto desejado no campo apropriado.
 4. Selecione a opção desejada (criptografar ou descriptografar).
 5. O resultado será exibido na tela.

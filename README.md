@@ -2,13 +2,13 @@
 
 Este projeto foi desenvolvido como parte do desafio da **Oracle Next Education (ONE)** em parceria com a **Alura**. O objetivo é criar uma aplicação que permite criptografar e descriptografar mensagens de texto.
 
-# Documentação
+# Documentação 📝
 <ol>
 <li><a href="documentos/Especificação do Projeto.md"> Especificação do Projeto</a></li>
 <li><a href="documentos/Metodologia.md"> Metodologia</a></li>
 </ol>
 
-## Como Utilizar 📝
+## Como Utilizar 🛠
 1. Acesse o site do **Text encoder** [aqui.](https://riniel-rodrigo.github.io/Text-decoder/)
 3. Insira o texto desejado no campo apropriado.
 4. Selecione a opção desejada (criptografar ou descriptografar).

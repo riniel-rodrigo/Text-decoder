@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --backgorundMain: #F3F5FC;
+    --backgorundAside: #FFFFFF;
+    --primaryColor: #0A3871;
+    --secondaryColor: #343A40;
+    --tertiaryColor:#E9ECF8;
+    --instructionColor:#495057;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    height: 95%;
+    background-color: var(--backgorundMain);
+}
+
+header {
+    background-color: var(--backgorundMain);
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 20px;
+
+}
+
+header img {
+    width: 120px;
+    height: 48px;
+}
+
+main {
+    background-color: var(--backgorundMain);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    gap:50px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    width: 70.17%;
+    height: 90%;
+
+}
+
+.text_input {
+    height: 80%;
+    width:85%;
+}
+
+.text_input .input1 {
+    background-color:var(--backgorundMain);
+    border:none;
+    display:flex;
+    resize: none;
+    font-size: 2rem;
+    width:100%;
+    height: 100%;
+    
+}
+
+.text_input .input1:active{
+    border:none;
+}
+
+
+.text_input .input1::placeholder {
+    justify-self:start;
+    align-self:start;
+    font-size: 2rem;
+    color:var(--primaryColor);
+}
+
+.text_input .input1:focus-visible{
+    outline: none;
+} 
+
+.section_buttons {
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap:10px;
+    height: 20%;
+    width:85%;
+}
+
+.aviso{
+    display:flex;
+    gap:10px;
+    color: var(--instructionColor);
+}
+
+.aviso p{
+    font-size: 0.75rem;
+}
+
+.buttons{
+    display: flex;
+    gap:20px;
+
+}
+
+.buttons button{
+    all: unset;
+    background-color:var(--primaryColor);
+    color: var(--tertiaryColor);
+    font-size:1rem;
+    text-align: center;
+    border-radius:20px;
+    border:solid 0.1px var(--primaryColor);
+    transition: 0.4s ease;
+    width:15em;
+    height:3.3em;
+}
+
+.buttons button:hover{
+    background-color: var(--tertiaryColor);
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.buttons button:active {
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
+}
+
+aside {
+    background-color: var(--backgorundAside);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap:5px;
+    padding:2% 2% 2% 2%;
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    width: 270px;
+    height: 90%;
+
+}
+
+aside img {
+    Width: 100%;
+    Height: auto;
+}
+
+.mensagem_encontrada{
+    all: unset;
+    text-align: center;
+    font-weight:700;
+    font-size:1rem;
+}
+
+.mensagem_instrução{
+    all: unset;
+    color: var(--instructionColor);
+    text-align: center;
+    font-size:0.90rem;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+.input2 {
+    display:none;
+    background-color:var(--backgorundAside);
+    color: #495057c0;
+    border:none;
+    resize: none;
+    font-size: 1.3rem;
+    width:95%;
+    height: 95%;
+    
+}
+.input2:active{
+    border:none;
+}
+
+.input2:focus-visible{
+    outline: none;
+}
+
+.copyButton{
+    all: unset;
+    display:none;
+    background-color: var(--backgorundAside);
+    color: var(--primaryColor);
+    cursor: pointer;
+    font-size:1rem;
+    text-align: center;
+    border-radius:20px;
+    border:solid 0.1px var(--primaryColor);
+    transition: 0.4s ease;
+    width:15em;
+    height:3.3em;
+}
+
+.copyButton:hover{
+    background-color:var(--primaryColor);
+    color:var(--tertiaryColor);
+
+}
+
+@media (max-width: 850px) {
+
+    main{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    section{
+        /* border: solid 2px red; */
+        width:90%;
+        padding-top:30px;
+        align-items: center;
+    }
+
+    .text_input{
+        width:100%;
+    }
+
+    .section_buttons{
+        /* border: solid 2px red; */
+        width:100%;
+        align-items: center;
+    }
+
+    .buttons{
+        justify-content: center;
+        width:100%;
+    }
+
+    aside img{
+        display:none !important;
+    }
+
+    aside{
+        width:90%;
+        height:35%;
+    }
+
+    .copyButton{
+        width:100%;
+    }
+}
+
+@media(max-width:450px){
+
+    section{
+        align-items: center;
+    }
+
+    .section_buttons{
+        align-items: center;
+        height:100%;
+        height: 30%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        gap:10px;
+        height:100%;
+    }
+
+    .text_input .input1{
+        font-size: 1.5rem;
+    }
+
+    .text_input .input1::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .buttons button{
+        font-size:1rem;
+        width:100%;
+    }
+    
+}

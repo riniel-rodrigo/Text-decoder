@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/aluraIcon.png" alt="Ícone da Alura">
+    </header>
+
+    <main>
+        <section>
+            <div class="text_input">
+                <textarea class="input1" placeholder="Digite seu texto aqui"></textarea>
+            </div>
+
+            <div class="section_buttons">
+                <div class="aviso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                    </svg>
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+
+                <div class="buttons">
+                    <button onclick="Encrypt()">Criptografar</button>
+                    <button onclick="DescryptBtn()">Descriptografar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <aside>
+            <textarea class="input2" disabled></textarea>
+
+            <img class="figure1" src="assets/figure1.png" alt="">
+
+            <p class="mensagem_encontrada">Nenhuma mensagem encontrada</p>
+            <p class="mensagem_instrução">Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+            <button class="copyButton" onclick="copyText()">Copiar</button>
+        </aside>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

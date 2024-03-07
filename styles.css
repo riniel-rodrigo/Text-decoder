@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 :root {
     --backgorundMain: #F3F5FC;
     --backgorundAside: #FFFFFF;
     --primaryColor: #0A3871;
     --secondaryColor: #343A40;
-    --tertiaryColor:#E9ECF8;
-    --instructionColor:#495057;
+    --tertiaryColor: #E9ECF8;
+    --instructionColor: #495057;
 }
 
 
@@ -43,14 +44,14 @@ main {
     align-items: center;
     width: 95%;
     height: 100%;
-    gap:50px;
+    gap: 50px;
 
 }
 
 section {
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items: end;
     width: 70.17%;
     height: 90%;
 
@@ -58,75 +59,75 @@ section {
 
 .text_input {
     height: 80%;
-    width:85%;
+    width: 85%;
 }
 
 .text_input .input1 {
-    background-color:var(--backgorundMain);
-    border:none;
-    display:flex;
+    background-color: var(--backgorundMain);
+    border: none;
+    display: flex;
     resize: none;
     font-size: 2rem;
-    width:100%;
+    width: 100%;
     height: 100%;
-    
+
 }
 
-.text_input .input1:active{
-    border:none;
+.text_input .input1:active {
+    border: none;
 }
 
 
 .text_input .input1::placeholder {
-    justify-self:start;
-    align-self:start;
+    justify-self: start;
+    align-self: start;
     font-size: 2rem;
-    color:var(--primaryColor);
+    color: var(--primaryColor);
 }
 
-.text_input .input1:focus-visible{
+.text_input .input1:focus-visible {
     outline: none;
-} 
+}
 
 .section_buttons {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: end;
-    gap:10px;
+    gap: 10px;
     height: 20%;
-    width:85%;
+    width: 85%;
 }
 
-.aviso{
-    display:flex;
-    gap:10px;
+.aviso {
+    display: flex;
+    gap: 10px;
     color: var(--instructionColor);
 }
 
-.aviso p{
+.aviso p {
     font-size: 0.75rem;
 }
 
-.buttons{
+.buttons {
     display: flex;
-    gap:20px;
+    gap: 20px;
 
 }
 
-.buttons button{
+.buttons button {
     all: unset;
-    background-color:var(--primaryColor);
+    background-color: var(--primaryColor);
     color: var(--tertiaryColor);
-    font-size:1rem;
+    font-size: 1rem;
     text-align: center;
-    border-radius:20px;
-    border:solid 0.1px var(--primaryColor);
+    border-radius: 20px;
+    border: solid 0.1px var(--primaryColor);
     transition: 0.4s ease;
-    width:15em;
-    height:3.3em;
+    width: 15em;
+    height: 3.3em;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     background-color: var(--tertiaryColor);
     color: var(--primaryColor);
     cursor: pointer;
@@ -139,12 +140,12 @@ section {
 
 aside {
     background-color: var(--backgorundAside);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap:5px;
-    padding:2% 2% 2% 2%;
+    gap: 5px;
+    padding: 2% 2% 2% 2%;
     border-radius: 18px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     width: 270px;
@@ -157,128 +158,236 @@ aside img {
     Height: auto;
 }
 
-.mensagem_encontrada{
+.mensagem_encontrada {
     all: unset;
     text-align: center;
-    font-weight:700;
-    font-size:1rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
-.mensagem_instrução{
+.mensagem_instrução {
     all: unset;
     color: var(--instructionColor);
     text-align: center;
-    font-size:0.90rem;
+    font-size: 0.90rem;
 }
-
-/* ////////////////////////////////////////////////////////// */
 
 .input2 {
-    display:none;
-    background-color:var(--backgorundAside);
+    display: none;
+    background-color: var(--backgorundAside);
     color: #495057c0;
-    border:none;
+    border: none;
     resize: none;
     font-size: 1.3rem;
-    width:95%;
+    width: 95%;
     height: 95%;
-    
-}
-.input2:active{
-    border:none;
+
 }
 
-.input2:focus-visible{
+.input2:active {
+    border: none;
+}
+
+.input2:focus-visible {
     outline: none;
 }
 
-.copyButton{
+.copyButton {
     all: unset;
-    display:none;
+    display: none;
     background-color: var(--backgorundAside);
     color: var(--primaryColor);
     cursor: pointer;
-    font-size:1rem;
+    font-size: 1rem;
     text-align: center;
-    border-radius:20px;
-    border:solid 0.1px var(--primaryColor);
+    border-radius: 20px;
+    border: solid 0.1px var(--primaryColor);
     transition: 0.4s ease;
-    width:15em;
-    height:3.3em;
+    width: 15em;
+    height: 3.3em;
 }
 
-.copyButton:hover{
-    background-color:var(--primaryColor);
-    color:var(--tertiaryColor);
+.copyButton:hover {
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
 
 }
+
+footer {
+    margin-top:90px;
+    background-color: var(--tertiaryColor);
+    display: flex;
+    align-items: end;
+    height: 200px;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+    height: 80%;
+}
+
+.section-footer li {
+    list-style: none;
+    font-size: 0.875rem;
+}
+
+.section-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cont-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.li_titulo {
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.icons-redes {
+    color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    transition: 0.9s ease;
+    width: 90%;
+}
+
+.icons-redes i {
+    transition: 0.3s ease;
+}
+
+.bi-whatsapp:hover {
+    color: #3EDF5B;
+}
+
+.bi-github:hover {
+    color: #080808;
+}
+
+.bi-instagram:hover {
+    color: #F62E3D;
+}
+
+.bi-linkedin:hover {
+    color: #0A66C2;
+}
+
+.container-2 a {
+    transition: 0.3s ease;
+}
+
+.container-2 a:hover {
+    color: var(--primaryColor);
+}
+
+.container-3 {
+    justify-content: center;
+    font-weight: 300;
+    font-size: 0.75rem;
+    height: 60%;
+}
+
 
 @media (max-width: 850px) {
 
-    main{
-        width:100%;
+    main {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content:center;
-    }
-
-    section{
-        /* border: solid 2px red; */
-        width:90%;
-        padding-top:30px;
-        align-items: center;
-    }
-
-    .text_input{
-        width:100%;
-    }
-
-    .section_buttons{
-        /* border: solid 2px red; */
-        width:100%;
-        align-items: center;
-    }
-
-    .buttons{
         justify-content: center;
-        width:100%;
     }
 
-    aside img{
-        display:none !important;
+    section {
+        width: 90%;
+        padding-top: 30px;
+        align-items: center;
     }
 
-    aside{
-        width:90%;
-        height:35%;
+    .text_input {
+        width: 100%;
     }
 
-    .copyButton{
-        width:100%;
+    .section_buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    aside img {
+        display: none !important;
+    }
+
+    aside {
+        width: 90%;
+        height: 35%;
+    }
+
+    .copyButton {
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width:595px) {
+    footer {
+        height: 230px;
+    }
+
+    .section-footer {
+        /* border:solid 2px purple; */
+        flex-wrap: wrap;
+        height: 90%;
+    }
+
+    .container-3 {
+        justify-content: start;
+        font-weight: 300;
+        font-size: 0.75rem;
+        height:auto;
     }
 }
 
-@media(max-width:450px){
+@media(max-width:450px) {
 
-    section{
+    section {
         align-items: center;
     }
 
-    .section_buttons{
+    .section_buttons {
         align-items: center;
-        height:100%;
+        height: 100%;
         height: 30%;
     }
 
-    .buttons{
+    .buttons {
         display: flex;
         flex-direction: column;
-        width:100%;
-        gap:10px;
-        height:100%;
+        width: 100%;
+        gap: 10px;
+        height: 100%;
     }
 
-    .text_input .input1{
+    .text_input .input1 {
         font-size: 1.5rem;
     }
 
@@ -286,9 +395,15 @@ aside img {
         font-size: 1.5rem;
     }
 
-    .buttons button{
-        font-size:1rem;
-        width:100%;
+    .buttons button {
+        font-size: 1rem;
+        width: 100%;
     }
-    
+
+}
+
+@media(max-width:450px) {
+    footer {
+        height: 360px;
+    }
 }
